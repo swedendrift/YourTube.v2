@@ -5,7 +5,9 @@
   "main": "index.js",
   "repository": "git@github.com:swedendrift/Yourtube.v2.git",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +32,8 @@
     "react-redux": "^4.0.0",
     "react-router": "^2.0.1",
     "redux": "^3.0.4",
-    "youtube-api-search": "0.0.5"
-  }
+    "youtube-api-search": "0.0.5",
+    "snyk": "^1.319.0"
+  },
+  "snyk": true
 }
